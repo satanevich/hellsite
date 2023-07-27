@@ -1,0 +1,17 @@
+pip freeze > requirements.txt - для сохранения настроек в файл
+pip install -r requirements.txt - для загрузки настроек из файла
+python manage.py makemessages -l de - локализация для немецкого языка
+python manage.py compilemessages - сохраняем локализацию
+Для django REST необходимо установить следующие пакеты:
+    1. pip install djangorestframework
+    2. pip install markdown (Markdown support for the browsable API)
+    3. pip install django-filter (Gilterring support)
+pip install drf-yasg - для генерации спецификаций
+pip install docutils - для создания документации
+python -m pip install django-debug-toolbar - для логирования времени, потраченного на обработку запроса
+pip install PyYaml - установка пакета для работы с Yaml
+python manage.py dumpdata app_news.NewsType --format json -o news_types.json
+ - сохраняем данные из таблицы в файл в формате json ( параметр -о создает сохранение по умолчанию)
+python manage.py loaddata news_types.json - восстановить сохраненые ранее данные
+python manage.py test shopapp.tests - тестирование приложений (тестами в shopapp.tests)
+pip install drf-spectacular - для документирования API (аналог drf-yasg)
